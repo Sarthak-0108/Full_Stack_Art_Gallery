@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Post from "./components/post";
-import Feed from "./components/Feed";
+import Post from "./components/post.jsx";
+import Feed from "./components/Feed.jsx";
 
 const App = () => {
   return (
