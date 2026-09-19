@@ -4,7 +4,7 @@ import Feed from "./components/Feed.jsx";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Full_Stack_Art_Gallery/">
       <Routes>
         <Route path="/create-post" element={<Post />} />
         <Route path="/" element={<Feed />} />
