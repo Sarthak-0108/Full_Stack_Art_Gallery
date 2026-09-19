@@ -4,7 +4,7 @@ import Navbar from "./Navbar.jsx";
 const Feed = () => {
     const [post, setPost] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3000/feed")
+        fetch("https://full-stack-art-gallery-backend.onrender.com/feed")
             .then((response) => response.json())
             .then((data) => setPost(data.data));
     }, []);

@@ -26,10 +26,13 @@ const Post = () => {
         formData.append("imageUrl", file);
 
         try {
-            const response = await fetch("http://localhost:3000/create-post", {
-                method: "POST",
-                body: formData,
-            });
+            const response = await fetch(
+                "https://full-stack-art-gallery-backend.onrender.com/create-post",
+                {
+                    method: "POST",
+                    body: formData,
+                },
+            );
             const data = await response.json();
 
             if (!response.ok) {
